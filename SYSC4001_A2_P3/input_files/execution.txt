@@ -1,0 +1,48 @@
+0, 1, switch to kernel mode
+1, 1, save context
+2, 1, load vector 2 (0x0004)
+3, 7, jump to ISR
+10, 2, FORK ISR
+12, 1, IRET
+13, 1, switch to kernel mode
+14, 1, save context
+15, 1, load vector 3 (0x0006)
+16, 7, jump to ISR
+23, 3, EXEC ISR
+26, 1, IRET
+27, 150, LOAD PROGRAM program1
+177, 100, CPU Burst
+277, 1, switch to kernel mode
+278, 1, save context
+279, 1, load vector 4 (0x0008)
+280, 7, jump to ISR
+287, 250, SYSCALL ISR
+537, 1, IRET
+538, 1, switch to kernel mode
+539, 1, save context
+540, 1, load vector 4 (0x0008)
+541, 7, jump to ISR
+548, 250, ENDIO ISR
+798, 1, IRET
+799, 20, CPU Burst
+819, 1, switch to kernel mode
+820, 1, save context
+821, 1, load vector 3 (0x0006)
+822, 7, jump to ISR
+829, 3, EXEC ISR
+832, 1, IRET
+833, 225, LOAD PROGRAM program2
+1058, 30, CPU Burst
+1088, 1, switch to kernel mode
+1089, 1, save context
+1090, 1, load vector 6 (0x000C)
+1091, 7, jump to ISR
+1098, 600, SYSCALL ISR
+1698, 1, IRET
+1699, 1, switch to kernel mode
+1700, 1, save context
+1701, 1, load vector 6 (0x000C)
+1702, 7, jump to ISR
+1709, 600, ENDIO ISR
+2309, 1, IRET
+2310, 10, CPU Burst
